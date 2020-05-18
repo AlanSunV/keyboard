@@ -1,0 +1,75 @@
+//键盘
+.keyboard {
+  position: fixed;
+  bottom: -14rem;
+  width: 100%;
+  height: 13.3rem;
+  user-select: none;
+  background: #e6e6e6;
+  border-top: 1px solid #ddd;
+  transition: 0.4s;
+
+  .number {
+    float: left;
+    width: 15rem;
+    height: 100%;
+
+    i {
+      width: 4.65rem;
+      height: 3rem;
+      line-height: 3rem;
+      font-size: 1.7rem;
+      font-style: normal;
+      text-align: center;
+      background: rgba(243, 243, 243, 1);
+      border-radius: 0.21rem;
+      float: left;
+      margin: 0.15rem .15rem;
+    }
+
+    .otherNumber {
+      width: 9.6rem;
+    }
+  }
+
+  .function {
+    z-index: 99;
+    float: left;
+    width: 4.8rem;
+    height: 100%;
+
+    i {
+      display: block;
+      width: 100%;
+      font-size: 0.8rem;
+      font-style: normal;
+      line-height: 133px;
+      text-align: center;
+    }
+
+    i:first-child {
+      height: 3rem;
+      color: #fff;
+      background: url(./../assets/img/del.png) center no-repeat;
+      background-color: rgba(243, 243, 243, 1);
+      background-size: 1.5rem;
+      border-radius: 0.21rem;
+      margin: 0.15rem 0rem;
+    }
+
+    i:last-child {
+      width: 100%;
+      height: 9.6rem;
+      line-height: 9.5rem;
+      font-size: 0.96rem;
+      color: #fff;
+      background: #1ecf69;
+      border-radius: 0.21rem;
+      margin: 0.3rem 0rem;
+    }
+  }
+}
+
+.showKeyboard {
+  bottom: 0;
+}

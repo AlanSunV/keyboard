@@ -1,0 +1,178 @@
+.big_box {
+  margin: 0.8rem;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0.11rem;
+  box-shadow: 0 0.21rem 0.64rem 0 rgba(0, 0, 0, 0.05);
+
+  //输入框样式
+  .wrapper {
+    margin: 0 auto;
+    height: 4.3rem;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+
+    font-size: 0.8rem;
+    color: #333;
+    border-bottom: 0.05rem solid rgba(242, 242, 242, 1);
+    align-items: center;
+
+    .label {
+
+      width: 88%;
+      font-size: 0.8rem;
+      line-height: 3.2rem;
+      color: #666;
+    }
+
+    .amount_icon {
+      font-size: 1.71rem;
+    }
+
+    .input_clean {
+      right: 0.5rem;
+      width: 0.85rem;
+      height: 0.9rem;
+      padding: 0.5rem;
+    }
+
+    .input_money {
+      float: left;
+      width: 80%;
+      height: 3rem;
+      margin-left: 1.8rem;
+      font-size: 1.92rem;
+      line-height: 3rem;
+      text-align: left;
+    }
+  }
+}
+
+//光标样式
+@keyframes blink {
+  50% {
+    color: #000;
+    background: #3c72ee;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    color: #000;
+    background: #3c72ee;
+  }
+}
+
+@-ms-keyframes blink {
+  50% {
+    color: #000;
+    background: #3c72ee;
+  }
+}
+
+@-moz-keyframes blink {
+  50% {
+    color: #000;
+    background: #3c72ee;
+  }
+}
+
+.blink {
+  position: absolute;
+  float: right;
+  width: 0.1rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  border: none;
+  -webkit-animation: 1s blink infinite;
+  animation: 1s blink infinite;
+}
+
+
+//实际支付
+.money_box {
+  overflow: hidden;
+  background: #fff;
+
+  .pay_money {
+    width: 88%;
+    //height: 2rem;
+    height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: #333;
+    transition: 0.4s;
+
+    .label {
+      float: left;
+      font-size: 0.8rem;
+    }
+
+    .amount_box {
+      float: right;
+      font-size: 0.75rem;
+      display: flex;
+      flex-direction: row;
+
+      .amount_icon {
+        margin-right: 0.35rem;
+        line-height: 3.2rem;
+      }
+
+      .pay_amount {
+        float: right;
+        font-size: 1.28rem;
+      }
+    }
+  }
+
+  .show_pay_money {
+    height: 2rem;
+  }
+
+  .pay_btn {
+    width: 88%;
+    height: 2.35rem;
+    margin: 1.17rem auto 0.7rem;
+    font-size: 0.85rem;
+    line-height: 2.35rem;
+    text-align: center;
+    border-radius: 0.27rem;
+
+    div {
+      width: 100%;
+    }
+
+    img {
+      display: inline-block;
+      height: 0.9rem;
+      margin-right: 0.64rem;
+      vertical-align: middle;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+
+  .btn_disable {
+    color: #f5ffec;
+    background: rgba(30, 207, 105, 0.4);
+  }
+
+  .btn_unDisable {
+    color: #fff;
+    background: #1ecf69;
+  }
+}
+
+
+
+
